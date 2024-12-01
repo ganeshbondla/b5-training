@@ -1,27 +1,33 @@
-//PLAN TO-DO APPLICATION
+NODE JS - LOGICS
 
-- USER
-  - Login
-    - List Of DoToItems (Filter By Status)
-    - Create New To-do
-  - Register
+Database - Contains Data
 
-  if(active="Login")
-  {
-    console.log={"text-primary"}
-  }
-  else
-  {
-    //nothing
-  }
+ACTIONS (METHODS):
 
-  var class = "S";
+GET - READ
+POST - CREATE
+PUT - UPDATE
+DELETE - DELETE
 
-  {}
+USER
 
-  class="Nav-class {class}"
-  class={`Nav-class ${class}`}
-  
+- CREATE
+- READ By ID
+- READ By LIST
+- UPDATE
+- DELETE
 
+TODO
 
-  active="Login" ? "text-primary" : //nothing
+- CREATE
+- READ By ID
+- READ By LIST
+- UPDATE
+- DELETE
+
+STUDENT
+
+ - CREATE
+ - UPDATE
+
+CRUD

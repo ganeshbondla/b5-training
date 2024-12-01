@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { logoutHandler } from "../utils/utils";
 
-const UserHeader = ({ active }) => {
+const UserHeader = ({ active, session_email }) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -53,10 +54,10 @@ const UserHeader = ({ active }) => {
                 </Link>
               </li>
             </ul>
-            <small>Hello, Ganesh</small>
+            <small>Hello, {session_email}</small>
             <ul className="navbar-nav ">
               <li className="nav-item">
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" onClick={logoutHandler}>
                   <b>Logout</b>
                 </Link>
               </li>

@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import UserHeader from "./UserHeader";
 import { Link } from "react-router-dom";
 
 const UserProfile = () => {
+  const [username, setUserName] = useState("Ganesh Bondla");
+  const [useremail, setUserEmail] = useState("ganesh@test.com");
+  const [usermobile, setUserMobile] = useState("1234567891");
   return (
     <>
       <div className="container">
@@ -24,7 +27,7 @@ const UserProfile = () => {
                 alt="ProfileImage"
               />
               <div className="text-center mt-2">
-                <h5>Ganesh Bondla</h5>
+                <h5>{username}</h5>
               </div>
             </div>
             <div className="col-md-8 col-lg-8 my-auto">
@@ -35,11 +38,11 @@ const UserProfile = () => {
                 <tbody>
                   <tr>
                     <th>Email Address</th>
-                    <td>test@gmail.com</td>
+                    <td>{useremail}</td>
                   </tr>
                   <tr>
                     <th>Mobile Number</th>
-                    <td>1234567891</td>
+                    <td>{usermobile}</td>
                   </tr>
                 </tbody>
               </table>
